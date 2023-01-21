@@ -24,7 +24,7 @@ plugins {
 
 allprojects {
     group = "com.sergio-sastre.Multi-module-library-jitpack"
-    version = "0.0.2"
+    version = "1.0.2"
     repositories {
         google()
         mavenCentral()
