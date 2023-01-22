@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
+    id 'maven-publish'
 }
 
 android {
@@ -10,8 +11,8 @@ android {
     defaultConfig {
         minSdk 23
         targetSdk 33
-        versionCode 4
-        versionName "1.0.3"
+        versionCode 5
+        versionName "1.0.4"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -31,13 +32,12 @@ android {
     }
 }
 
-/*
 publishing {
     publications {
         release(MavenPublication) {
             groupId = 'com.github.sergio-sastre'
-            artifactId = 'Multi-module-library-jitpack.mod1'
-            version = '1.0.3'
+            artifactId = "$rootProject.name-$project.name"
+            version = '1.0.4'
 
             afterEvaluate {
                 from components.release
@@ -45,8 +45,6 @@ publishing {
         }
     }
 }
-
- */
 
 dependencies {
 
