@@ -10,6 +10,8 @@ android {
     defaultConfig {
         minSdk 23
         targetSdk 33
+        versionCode 4
+        versionName "1.0.3"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -29,9 +31,26 @@ android {
     }
 }
 
+/*
+publishing {
+    publications {
+        release(MavenPublication) {
+            groupId = 'com.github.sergio-sastre'
+            artifactId = 'Multi-module-library-jitpack.mod1'
+            version = '1.0.3'
+
+            afterEvaluate {
+                from components.release
+            }
+        }
+    }
+}
+
+ */
+
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.appcompat:appcompat:1.6.0'
     implementation 'com.google.android.material:material:1.7.0'
     testImplementation 'junit:junit:4.13.2'
